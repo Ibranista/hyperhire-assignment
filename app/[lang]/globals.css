@@ -30,3 +30,23 @@ body {
 body {
   font-family: pretendard;
 }
+
+.hum_btn_wrapper {
+  @apply flex flex-col justify-center items-center md:hidden;
+}
+
+.hum_lines {
+  @apply bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm;
+}
+
+.menu_items {
+  @apply flex justify-between max-w-[1236px] w-full max-md:flex-col max-md:absolute max-md:h-[calc(100vh-88px)] max-md:w-5/6 top-[100px] max-md:p-5 gap-y-5 overflow-y-auto duration-300 ease-in-out;
+}
+
+.menu_item_wrapper {
+  @apply flex max-w-[872px] w-full justify-around max-md:flex-col max-md:gap-y-4;
+}
+
+.nav_right_section {
+  @apply flex max-w-[137px] w-full justify-between;
+}

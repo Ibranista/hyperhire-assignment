@@ -17,7 +17,8 @@ export function middleware(request: any) {
     pathname.startsWith('/_next/') ||
     pathname.startsWith('/favicon.ico') ||
     pathname.endsWith('.png') ||
-    pathname.endsWith('.jpg')
+    pathname.endsWith('.jpg') ||
+    pathname.endsWith('.svg')
   ) {
     return; // Skip locale prefixing for Next.js assets and static files
   }
