@@ -1,11 +1,10 @@
 import { IBoxProps } from "@/app/interface/interface";
 import { cva, VariantProps } from "class-variance-authority";
 import cn from "@/app/util/cn";
-import { poppins } from "@/app/util/fonts";
 
 export default function Box({ children, className, variant, size, ...props }: IBoxProps & VariantProps<typeof boxVariants>) {
     return (
-        <article className={`${cn(boxVariants({ variant, size, className }))} ${poppins.className}`} {...props}>
+        <article className={`${cn(boxVariants({ variant, size, className }))}`} {...props}>
             {children}
         </article>
     )

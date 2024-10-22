@@ -1,10 +1,9 @@
 import { ITextProps } from "@/app/interface/interface";
 import { cva, VariantProps } from "class-variance-authority";
 import cn from "@/app/util/cn";
-import { poppins } from "@/app/util/fonts";
 
 export default function Typography({ children, className, variant, size, ...props }: ITextProps & VariantProps<typeof textVariants>) {
-    return <p className={`${cn(textVariants({ variant, size, className }))} ${poppins.className}`} {...props}>{children}</p>
+    return <p className={`${cn(textVariants({ variant, size, className }))}`} {...props}>{children}</p>
 }
 
 const textVariants = cva("text-primary", {
@@ -12,9 +11,10 @@ const textVariants = cva("text-primary", {
         variant: {
             primary: "text-white relative",
             secondary: "text-lighter_black",
-            tertiary: "text-primary_black",
+            gradient: "bg-primary-gradient bg-clip-text text-transparent",
+            lightgrad: "bg-primary-light-gradient bg-clip-text text-transparent",
             md_dark: "text-[#343741]",
-            lightest_dark: "text-lightest_black"
+            light_white: "text-light_white"
         },
         size: {
             sm: "text-sm",
@@ -28,8 +28,3 @@ const textVariants = cva("text-primary", {
         size: "md"
     }
 })
-
-
-
-
-
