@@ -7,10 +7,10 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens: {
-      md: "1150px",
-    },
     extend: {
+      screens: {
+        md: "1150px",
+      },
       backgroundImage: {
         "primary-gradient":
           "linear-gradient(90deg, rgba(255,78,131,1) 0%, rgba(255,187,84,1) 100%)",

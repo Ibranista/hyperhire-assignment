@@ -1,3 +1,4 @@
+import Image from "next/image";
 import HeroJumbotron from "./components/jumbotron";
 import Box from "./ui/Box";
 import BoxIcon from "./ui/tinybox";
@@ -8,30 +9,31 @@ export default function Home({ params }: IFuncLangParams) {
   return (
     <main className="w-full">
       <HeroJumbotron />
+      {/* main-content */}
       <section className="main_content_wrapper">
         <Box variant={"container"} className="flex flex-col items-center gap-y-[15px]">
           <Typography variant={"gradient"} className="text-base">영상 제작소</Typography>
           <Typography variant={"light_white"} className="text-[44px] max-md:text-base">당장 내일<span className="text-white">‘고품질 맞춤 영상’</span>을 받아보세요.</Typography>
           <section className="main_content_cards_wrapper">
-            <article className="main_content_rounded_box">
+            <article className="main_content_rounded_box bg-outer">
               <div className="main_content_rounded_box scale-[.97] bg-inner">
                 <Typography variant={"gradient"} className="rounded_item_header">FAST</Typography>
                 <Typography variant={"lightgrad"} className="rounded_item_desc">X2</Typography>
               </div>
             </article>
-            <article className="main_content_rounded_box">
+            <article className="main_content_rounded_box bg-outer">
               <div className="main_content_rounded_box scale-[.97] bg-inner">
                 <Typography variant={"gradient"} className="rounded_item_header">QUALITY</Typography>
                 <Typography variant={"lightgrad"} className="rounded_item_desc">A++</Typography>
               </div>
             </article>
-            <article className="main_content_rounded_box">
+            <article className="main_content_rounded_box bg-outer">
               <div className="main_content_rounded_box scale-[.97] bg-inner">
                 <Typography variant={"gradient"} className="rounded_item_header">LOW PRICE</Typography>
                 <Typography variant={"lightgrad"} className="rounded_item_desc">1/2</Typography>
               </div>
             </article>
-            <article className="main_content_rounded_box">
+            <article className="main_content_rounded_box bg-outer">
               <div className="main_content_rounded_box scale-[.97] bg-inner">
                 <Typography variant={"gradient"} className="rounded_item_header">HIGH TECH</Typography>
                 <Typography variant={"lightgrad"} className="rounded_item_desc">Gen AI</Typography>
@@ -56,6 +58,20 @@ export default function Home({ params }: IFuncLangParams) {
             </Typography>
             <BoxIcon className="absolute top-0 left-0" />
           </div>
+        </Box>
+      </section>
+      {/* show-case */}
+      <section className="show_case w-full">
+        <Box className="max-w-full grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2" variant={"default"}>
+          {Array(12).fill(12).map((_, index) =>
+            <div className="relative h-[270px] max-sm:h-[146px] w-full bg-orange-200" key={index}>
+              <Image
+                src="/01.png"
+                layout="fill"
+                alt="portfolio-project"
+                objectFit="fill"  // Ensures the aspect ratio is maintained
+              />
+            </div>)}
         </Box>
       </section>
     </main>

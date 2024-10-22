@@ -64,7 +64,7 @@ body {
 }
 
 .bg-inner {
-  @apply bg-brand_gray;
+  @apply bg-brand_gray scale-[.97];
 }
 
 .rounded_item_header {
