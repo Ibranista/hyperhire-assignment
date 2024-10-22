@@ -21,6 +21,7 @@ const config: Config = {
         // background: 'var(--background)',
         // foreground: 'var(--foreground)',
         primary_background: "#000",
+        light_black: "#101010",
         brand_gray: "#141414",
         light_white: "#ffffff99",
         orangish: "orange",

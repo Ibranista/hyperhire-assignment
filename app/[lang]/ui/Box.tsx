@@ -19,11 +19,12 @@ const boxVariants = cva("box-primary", {
             default: ""
         },
         size: {
+            xsm: "max-w-[134px] w-full max-h-[134px] h-full flex flex-col items-center justify-center max-md:max-w-[80px] max-md:max-h-[80px] box-border py-[20px] px-[32px] rounded-[19px]",
             sm: "max-w-[161px]",
-            md: "w-60 px-4",
+            md: "max-w-[780px] w-full bg-[#141414] rounded-[20px]",
             mdx: "max-w-[306px]",
             lg: "p-6",
-            default: "max-w-[1600px]"
+            default: "max-w-[1600px] mx-auto"
         }
     },
     defaultVariants: {
