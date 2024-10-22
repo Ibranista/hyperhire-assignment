@@ -2,7 +2,6 @@
 
 import { usePathname } from 'next/navigation';
 import { useRouter } from 'next/navigation';
-import { locales } from '@/constants/locals';
 import { useState, MouseEvent } from 'react';
 import Image from 'next/image';
 

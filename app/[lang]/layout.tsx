@@ -25,7 +25,8 @@ export default async function RootLayout({
   params
 }: Readonly<{
   children: React.ReactNode;
-  params: { lang: string }
+  // @ts-expect-error params type not working
+  params
 }>) {
   const { lang } = await params;
   const content = await getDictionary(lang);

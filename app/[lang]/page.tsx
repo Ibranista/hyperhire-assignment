@@ -4,7 +4,7 @@ import Box from "./ui/Box";
 import BoxIcon from "./ui/tinybox";
 import Typography from "./ui/typography";
 
-export default function Home({ params }: IFuncLangParams) {
+export default function Home() {
 
   return (
     <main className="w-full pb-36">
@@ -82,7 +82,7 @@ export default function Home({ params }: IFuncLangParams) {
           </Typography>
           <BoxIcon className="absolute top-0 left-0" />
         </div>
-        <section className="cards_wrapper bg-slate-400 w-full flex justify-between max-md:flex-wrap items-center gap-x-3 max-md:justify-center max-md:gap-y-10 box-border px-16 max-md:px-5">
+        <section className="cards_wrapper bg-primary_background w-full flex justify-between max-md:flex-wrap items-center gap-x-3 max-md:justify-center max-md:gap-y-10 box-border px-16 max-md:px-5">
           {/* left box */}
           <Box size={"md"} variant={"default"} className=" flex flex-col items-center pt-[64px] pb-[62px] h-[816px]">
             <Typography className="font-bold text-[44px] leading-[140%] max-md:text-[22px] max-md:leading-[32px] text-[#d9d9d9]"> 일반 제작 </Typography>
@@ -161,7 +161,7 @@ export default function Home({ params }: IFuncLangParams) {
             </div>
 
             <div>
-              <textarea rows="6" placeholder="의뢰하실 영상내용 (여러 예시를 참고해서 이곳에 자세한 내용을 기재해주세요)"
+              <textarea rows={6} placeholder="의뢰하실 영상내용 (여러 예시를 참고해서 이곳에 자세한 내용을 기재해주세요)"
                 className="w-full bg-gray-800 text-white p-4 rounded-md border-none focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
               <p className="text-gray-400 text-sm mt-2">
                 고객님의 비즈니스 종류: 공공/산업/IR/행사/교육용 등<br />
