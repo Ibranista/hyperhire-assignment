@@ -1,11 +1,11 @@
-interface ServiceStep {
+export interface ServiceStep {
     number: string;
     description?: string;
     detail?: string;
   }
   
-  interface ServiceData {
-    header:string;
+  export interface ServiceData {
+    header: string;
     general_production: {
       title: string;
       subtitle: string;
@@ -23,7 +23,5 @@ interface ServiceStep {
     };
   }
   
-  declare const services: ServiceData;
-  
-  export type IServices = typeof services;
+  export type IServices = ServiceData;
   
