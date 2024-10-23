@@ -23,7 +23,7 @@ export default async function Home({ params }: {
       {/* show-case */}
       <ShowCase />
       {/* making-progress */}
-      <Box className="flex justify-center flex-col items-center bg-slate-300" variant={"default"}>
+      <Box className="flex justify-center flex-col items-center bg-primary_background" variant={"default"}>
         <div className="relative mb-[60px]">
           <Typography className="main_content_prev_works static">
             MAKING PROCESS
