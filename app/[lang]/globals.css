@@ -55,6 +55,10 @@ body {
   @apply bg-primary_background w-full pt-[157px] max-md:pt-[59px] pb-[60px] max-md:pb-[36px] flex-wrap;
 }
 
+.ploonet_rounded_wrapper article.rounded_details {
+  @apply max-md:justify-center;
+}
+
 .main_content_rounded_box {
   @apply rounded-full w-[211px] h-[211px] max-md:w-[85px] max-md:h-[85px] flex flex-col justify-center items-center gap-y-2;
 }
