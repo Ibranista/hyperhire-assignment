@@ -25,7 +25,7 @@ export default async function RootLayout({
   params
 }: Readonly<{
   children: React.ReactNode;
-  // @ts-expect-error params type not working
+  // @ts-expect-error params to extract lang
   params
 }>) {
   const { lang } = await params;

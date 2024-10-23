@@ -33,5 +33,37 @@
                 }
             }
         }
+    },
+    "content": {
+        "title": "Video Production Studio",
+        "subHeading": "Get 'High-Quality Custom Videos' tomorrow morning!",
+        "cards": [
+            {
+                "title": "FAST",
+                "description": "X2"
+            },
+            {
+                "title": "QUALITY",
+                "description": "A++"
+            },
+            {
+                "title": "LOW PRICE",
+                "description": "1/2"
+            },
+            {
+                "title": "HIGH TECH",
+                "description": "Gen AI"
+            }
+        ],
+        "aiVideoOnDemand": "AI VIDEO ON YOUR DEMAND",
+        "description": [
+            "Including virtual humans, background image creation, and music generation using domestic top-class AI technology:",
+            "Videos made with the touch of video professionals, reducing costs and time while guaranteeing quality."
+        ],
+        "pricingBenefits": [
+            "Price reduced by half, speed doubled, quality A++!",
+            "Corporate promotions, product introductions, education, events, information, and guidance videos:",
+            "'Give your 'that video' to Plutin Video Production Studio.'"
+        ]
     }
 }

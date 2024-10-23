@@ -1,7 +1,9 @@
 import { ButtonHTMLAttributes, HTMLAttributes } from "react";
 import { INavbar } from "./nav.model";
+import { IMainContent } from "./content.model";
 export interface IContent {
   navbar: INavbar;
+  content:IMainContent
 }
 
 type IBaseProps<T> = HTMLAttributes<T>;
