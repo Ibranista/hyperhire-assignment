@@ -20,7 +20,7 @@ This Next.js project utilizes the App Router directory and includes the followin
 
 ### Internationalization (i18n)
 
-The project supports multiple languages. You can toggle between English and Korean by clicking on the logo at the top of the page.
+The project supports multiple languages. You can toggle between English and Korean by clicking on the globe icon on the top right nav section.
 
 ### Libraries Used
 
