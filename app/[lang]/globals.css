@@ -68,7 +68,11 @@ body {
 }
 
 .rounded_item_header {
-  @apply max-w-[143px] text-2xl  font-bold max-md:text-xs leading-[120%] max-md:leading-[110%];
+  @apply max-w-[143px] text-2xl font-bold max-md:text-xs leading-[120%] max-md:leading-[110%];
+}
+
+.general_rounded_wrapper {
+  @apply flex flex-wrap bg-light_black justify-between rounded-full max-w-[594px] w-full py-[23px] px-[53px] mt-[18px];
 }
 
 .rounded_item_desc {
@@ -77,6 +81,14 @@ body {
 
 .main_content_cards_wrapper {
   @apply mt-10 max-md:mt-7 max-md:mb-[38px] mb-[68px] flex justify-center;
+}
+
+.cards_wrapper {
+  @apply bg-primary_background w-full flex justify-between max-md:flex-wrap items-center gap-x-3 max-md:justify-center max-md:gap-y-10 box-border px-16 max-md:px-5;
+}
+
+.ploonet_rounded_wrapper {
+  @apply w-full flex flex-col items-center justify-center relative;
 }
 
 .main_content_desc_wrapper {
@@ -95,16 +107,18 @@ body {
   @apply text-5xl font-bold max-md:text-[20px];
 }
 
+.prod_title {
+  @apply font-bold text-[44px] leading-[140%] max-md:text-[22px] max-md:leading-[32px] text-[#d9d9d9];
+}
+
 .horizontal_line {
   max-width: 800px;
   width: 100%;
   height: 1px;
 
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    #ffffff 53.75%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      #ffffff 53.75%,
+      rgba(255, 255, 255, 0) 100%);
   opacity: 0.4;
 }

@@ -1,11 +1,8 @@
-import Image from "next/image";
 import HeroJumbotron from "./components/jumbotron";
-import Box from "./ui/Box";
-import BoxIcon from "./ui/tinybox";
-import Typography from "./ui/typography";
 import { getDictionary } from "./dictionaries";
 import HomeTopContent from "./components/hom.topcontent";
 import ShowCase from "./components/showcase";
+import Services from "./components/services";
 
 export default async function Home({ params }: {
   // @ts-expect-error params to extract lang
@@ -13,8 +10,7 @@ export default async function Home({ params }: {
 }) {
   const { lang } = await params;
   const contentData = await getDictionary(lang);
-  const { content } = contentData ?? {};
-
+  const { content, services } = contentData ?? {};
   return (
     <main className="w-full pb-36">
       <HeroJumbotron />
@@ -23,61 +19,7 @@ export default async function Home({ params }: {
       {/* show-case */}
       <ShowCase />
       {/* making-progress */}
-      <Box className="flex justify-center flex-col items-center bg-primary_background" variant={"default"}>
-        <div className="relative mb-[60px]">
-          <Typography className="main_content_prev_works static">
-            MAKING PROCESS
-          </Typography>
-          <BoxIcon className="absolute top-0 left-0" />
-        </div>
-        <section className="cards_wrapper bg-primary_background w-full flex justify-between max-md:flex-wrap items-center gap-x-3 max-md:justify-center max-md:gap-y-10 box-border px-16 max-md:px-5">
-          {/* left box */}
-          <Box size={"md"} variant={"default"} className=" flex flex-col items-center pt-[64px] pb-[62px] h-[816px]">
-            <Typography className="font-bold text-[44px] leading-[140%] max-md:text-[22px] max-md:leading-[32px] text-[#d9d9d9]"> 일반 제작 </Typography>
-
-            <Typography className="text-[24px] max-md:text-base max-md:leading-[24px] max-md:font-bold"> 제작 시작 후 5영업일 이내</Typography>
-
-            <section className="rounded_wrapper w-full flex justify-center relative z-10">
-              <article className="rounded_details flex flex-wrap bg-light_black justify-between rounded-full max-w-[594px] w-full py-[23px] px-[53px] bg-light mt-[18px]">
-                {/* stepleft */}
-                <div className="left">
-                  <Typography variant={"gradient"} size={"xsm"}>STEP1</Typography>
-                  <Typography size={"xmd"}>사전 논의</Typography>
-                </div>
-
-                <div className="right">
-                  <Typography className="max-w-[316px] w-full" variant={"light_white"}> 영상 제작 문의를 통해 의뢰 확인 후 상담을 통해 방향 설정 및 내용 협의</Typography>
-                </div>
-              </article>
-              <Image src="/down.png" width={29} height={13} alt="drop down" className="absolute -bottom-2" />
-            </section>
-
-          </Box>
-          {/* right side */}
-          <Box size={"md"} variant={"default"} className=" flex flex-col items-center pt-[64px] pb-[62px] h-[816px]">
-            <Typography className="font-bold text-[44px] leading-[140%] max-md:text-[22px] max-md:leading-[32px] " variant={"gradient"}> Ploonet Quickserve™
-            </Typography>
-
-            <Typography className="text-[24px] max-md:text-base max-md:leading-[24px] max-md:font-bold"> 제작 시작 후 5영업일 이내</Typography>
-
-            <section className="rounded_wrapper w-full flex flex-col items-center justify-center relative">
-              <article className="rounded_details flex flex-wrap items-center max-w-[594px] w-full bg-light mt-[18px] gap-x-[40px]">
-                {/* stepleft */}
-                <Box size={"xsm"} variant={"default"} className="left bg-primary-gradient">
-                  <Typography size={"xsm"} className="text-[24px] max-md:text-[18px]">STEP1</Typography>
-                  <Image src="/note_icon.png" width={40} height={51} alt="note icon" />
-                </Box>
-
-                <div className="right">
-                  <Typography>제작 안내</Typography>
-                  <Typography className="max-w-[316px] w-full" variant={"light_white"}> 영상 제작 문의를 통해 의뢰 확인 후 상담을 통해 방향 설정 및 내용 협의</Typography>
-                </div>
-              </article>
-            </section>
-
-          </Box>
-        </section>
-      </Box >
+      <Services services={services} />
 
 
       <div className="bg-black text-white min-h-screen flex items-center justify-center px-4">

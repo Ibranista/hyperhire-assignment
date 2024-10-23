@@ -65,5 +65,63 @@
             "Corporate promotions, product introductions, education, events, information, and guidance videos:",
             "'Give your 'that video' to Plutin Video Production Studio.'"
         ]
+    },
+    "services": {
+        "header": "MAKING PROGRESS",
+        "general_production": {
+            "title": "General Production",
+            "subtitle": "Production starts within 5 business days",
+            "steps": [
+                {
+                    "number": "STEP1",
+                    "description": "Pre-discussion",
+                    "detail": "Confirm the request through video production inquiries, consult to set directions and coordinate content"
+                },
+                {
+                    "number": "STEP1",
+                    "description": "Pre-discussion",
+                    "detail": "Confirm the request through video production inquiries, consult to set directions and coordinate content"
+                },
+                {
+                    "number": "STEP1",
+                    "description": "Pre-discussion",
+                    "detail": "Confirm the request through video production inquiries, consult to set directions and coordinate content"
+                },
+                {
+                    "number": "STEP1",
+                    "description": "Pre-discussion",
+                    "detail": "Confirm the request through video production inquiries, consult to set directions and coordinate content"
+                },
+                {
+                    "number": "STEP1",
+                    "description": "Pre-discussion",
+                    "detail": "Confirm the request through video production inquiries, consult to set directions and coordinate content"
+                }
+            ]
+        },
+        "ploonet_quickserve": {
+            "title": "Ploonet Quickserve™",
+            "subtitle": "Production starts within 5 business days",
+            "steps": [
+                {
+                    "number": "STEP1",
+                    "icon": "note_icon.png",
+                    "description": "Production Notice",
+                    "detail": "Confirm the request through video production inquiries, consult to set directions and coordinate content"
+                },
+                {
+                    "number": "STEP1",
+                    "icon": "note_icon.png",
+                    "description": "Production Notice",
+                    "detail": "Confirm the request through video production inquiries, consult to set directions and coordinate content"
+                },
+                {
+                    "number": "STEP1",
+                    "icon": "note_icon.png",
+                    "description": "Production Notice",
+                    "detail": "Confirm the request through video production inquiries, consult to set directions and coordinate content"
+                }
+            ]
+        }
     }
 }

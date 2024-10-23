@@ -65,5 +65,63 @@
             "기업 홍보, 제품 소개, 교육 및 행사, 정보 및 안내 영상 등",
             "'당신이 필요한 '그 영상' 을 플루닛 영상제작소에 맡겨주세요."
         ]
+    },
+    "services": {
+        "header": "MAKING PROGRESS",
+        "general_production": {
+            "title": "일반 제작",
+            "subtitle": "제작 시작 후 5영업일 이내",
+            "steps": [
+                {
+                    "number": "STEP1",
+                    "description": "사전 논의",
+                    "detail": "영상 제작 문의를 통해 의뢰 확인 후 상담을 통해 방향 설정 및 내용 협의"
+                },
+                {
+                    "number": "STEP1",
+                    "description": "사전 논의",
+                    "detail": "영상 제작 문의를 통해 의뢰 확인 후 상담을 통해 방향 설정 및 내용 협의"
+                },
+                {
+                    "number": "STEP1",
+                    "description": "사전 논의",
+                    "detail": "영상 제작 문의를 통해 의뢰 확인 후 상담을 통해 방향 설정 및 내용 협의"
+                },
+                {
+                    "number": "STEP1",
+                    "description": "사전 논의",
+                    "detail": "영상 제작 문의를 통해 의뢰 확인 후 상담을 통해 방향 설정 및 내용 협의"
+                },
+                {
+                    "number": "STEP1",
+                    "description": "사전 논의",
+                    "detail": "영상 제작 문의를 통해 의뢰 확인 후 상담을 통해 방향 설정 및 내용 협의"
+                }
+            ]
+        },
+        "ploonet_quickserve": {
+            "title": "Ploonet Quickserve™",
+            "subtitle": "제작 시작 후 5영업일 이내",
+            "steps": [
+                {
+                    "number": "STEP1",
+                    "icon": "note_icon.png",
+                    "description": "제작 안내",
+                    "detail": "영상 제작 문의를 통해 의뢰 확인 후 상담을 통해 방향 설정 및 내용 협의"
+                },
+                {
+                    "number": "STEP1",
+                    "icon": "note_icon.png",
+                    "description": "제작 안내",
+                    "detail": "영상 제작 문의를 통해 의뢰 확인 후 상담을 통해 방향 설정 및 내용 협의"
+                },
+                {
+                    "number": "STEP1",
+                    "icon": "note_icon.png",
+                    "description": "제작 안내",
+                    "detail": "영상 제작 문의를 통해 의뢰 확인 후 상담을 통해 방향 설정 및 내용 협의"
+                }
+            ]
+        }
     }
 }
