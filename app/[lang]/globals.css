@@ -40,7 +40,7 @@ body {
 }
 
 .menu_items {
-  @apply flex justify-between max-w-[1236px] w-full max-md:flex-col max-md:absolute max-md:h-[calc(100vh-88px)] max-md:w-5/6 top-[100px] max-md:p-5 gap-y-5 overflow-y-auto duration-300 ease-in-out;
+  @apply flex max-md:z-[100] background-black justify-between max-w-[1236px] w-full max-md:flex-col max-md:absolute max-md:h-[calc(100vh-88px)] max-md:w-5/6 top-[100px] max-md:p-5 gap-y-5 overflow-y-auto duration-300 ease-in-out;
 }
 
 .menu_item_wrapper {
