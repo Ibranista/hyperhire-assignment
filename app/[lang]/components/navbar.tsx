@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Typography from "../ui/typography";
+import BoxIcon from "../ui/tinybox";
 import { INavbar } from "@/app/interface/nav.model";
 import Box from "../ui/Box";
 import HumButton from "./humbutton";
@@ -32,11 +33,11 @@ export default function Navbar({ navContent }: { navContent: INavbar }) {
                         <ul className="menu_item_wrapper">
                             {
                                 menuItems?.map((item, index) => (
-                                    <li key={index} className="max-md:flex max-md:gap-x-2 max-md:items-center">
+                                    <li key={index} className="max-md:flex max-md:gap-x-2 max-md:items-center relative overflow-hidden">
                                         <Typography>{item}</Typography>
-                                        {/* {index === 4 &&
-                                            <BoxIcon className="" />
-                                        } */}
+                                        {index === 4 &&
+                                            <BoxIcon className="absolute -bottom-3 right-1/2" />
+                                        }
                                     </li>
                                 ))
                             }
