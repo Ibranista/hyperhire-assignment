@@ -7,16 +7,16 @@
             "height": 28
         },
         "menuItems": [
-            "스튜디오",
-            "워크센터",
-            "손비서",
-            "메타휴먼",
-            "영상제작소",
-            "공지사항",
-            "제휴문의"
+            "Studio",
+            "Work",
+            "Secretary",
+            "Meta Human",
+            "Production",
+            "Notice Board",
+            "Inquiry"
         ],
         "navRight": {
-            "loginLabel": "로그인",
+            "loginLabel": "Log in",
             "globe": {
                 "icon": {
                     "src": "/globe_icon.png",
